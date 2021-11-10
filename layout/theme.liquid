@@ -201,7 +201,7 @@
     {% include 'cart-popup' %}
   {%- endif -%}
 
-  {% section 'header' %}
+  {% comment %}{% section 'header' %}{% endcomment %}
 
   <div class="page-container drawer-page-content" id="PageContainer">
 
@@ -209,7 +209,7 @@
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
+    {% comment %} {% section 'footer' %} {% endcomment %}
 
     <div id="slideshow-info" class="visually-hidden" aria-hidden="true">
       {{- 'sections.slideshow.navigation_instructions' | t -}}
